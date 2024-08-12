@@ -1,0 +1,21 @@
+@media (max-width:500px){
+    main{
+    .contactanos{
+        .contactanosencuesta div{
+            font-size: 1.125rem;            
+            .nombre input {
+                padding: 1.25rem 3.125rem;
+                }
+            .apellido input {
+                padding: 1.25rem 3.125rem;
+                }
+            .email input {
+                padding: 1.25rem 3.125rem;
+                }
+            .mensaje textarea {
+                padding: .25rem 3.125rem;
+                } 
+            }
+        }
+    } 
+} 

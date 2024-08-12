@@ -1,0 +1,40 @@
+@media (max-width:640px){
+
+    main{
+        .sectionQuienesSomos{
+            width: 100%;
+            height: 210vh;
+            h1{
+                font-size: 1.125rem;
+                margin: .3125rem;
+            }
+            p{
+                padding: .5rem;
+                margin: .05rem;
+            }
+            .rectanguloquienessomos{
+                width: 100%;
+                height: 100vh;
+                justify-self: center;
+            }
+        }
+        .proximosEventos{            
+            h1{
+                font-size: 1.5rem;
+                padding: .625rem;
+            }
+            p{
+                font-size: 1.125rem;
+            }
+        }
+    }
+    
+    footer{
+        .direcciones{ 
+            @include flex(column,none,none);
+            width: 100%;
+            height: 4.6875rem; 
+            padding: .3125rem;     
+        }
+    }
+}

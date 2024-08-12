@@ -1,159 +1,103 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-/**
-fuentes
-font-family: "seasons";
-font-family: "trebuc";
+body {
+  background-color: #641933;
+  width: 100%;
+  height: 100%;
+  background-size: contain; }
 
-paleta de colores 
-#641933
-white
-#D6B970
-#232020
-
-
-**/
-@font-face {
-    font-family: "seasons";
-    src: url(../assets/fonts/The\ Seasons\ Regular.ttf);
-}
+a {
+  text-decoration: none; }
 
 @font-face {
-    font-family: "seasonscursiva";
-    src: url(../assets/fonts/Fontspring-DEMO-theseasons-ltit.otf);
-}
+  font-family: "seasons";
+  src: url("../assets/fonts/Seasons.ttf"); }
 
 @font-face {
-    font-family: "trebuc" ;
-    src: url(../assets/fonts/trebuc.ttf);
-}
+  font-family: "seasonscursiva";
+  src: url("../assets/fonts/seasonscursiva.otf"); }
 
-.cuadradoTotal{
-    background-color: #641933;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    
+@font-face {
+  font-family: "trebuc";
+  src: url("../assets/fonts/trebuc.ttf"); }
 
-}
-.logoOsadia{
+header {
+  background-color: #232020;
+  width: 100%;
+  height: 8.125rem; }
+  header .logoOsadia {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: none;
     width: 100%;
-    height: 75%;
-}
+    height: 75%; }
 
-header{
-    background-color:#232020;
-    width: 100%;
-    height: 8.125rem;
-}
-
-.barraDeTarea {
-    background-color:#232020b5;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.25rem;
-    font-family: "seasons";
-    list-style-type: none;
-    box-shadow: .3125rem .9375rem 3.125rem black;
-}
-
-.barraDeTarea li a {
-    text-decoration: none;
-    list-style: none;
-    color: #D6B970;
-    }
-
-.barraDeTarea li a:hover {
-    color: white;
-}
-
-.portada{
-    color: white;
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(7,1fr);
-    } 
-
-
-.portada h1{
+main .portada {
+  color: white;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr); }
+  main .portada h1 {
     font-family: "seasonscursiva";
-    font-weight:500;
+    font-weight: 500;
     font-size: 3.125rem;
     grid-column: 4/6;
     grid-row: 4/4;
     justify-self: center;
-    align-self:flex-start;
-    order: 4;
-    }
-
-.portada h2{
+    align-self: flex-start;
+    order: 4; }
+  main .portada h2 {
     font-family: "seasons";
-    font-weight:900;
+    font-weight: 900;
     font-size: 3.4375rem;
     grid-column: 5/6;
     grid-row: 4/5;
     justify-self: center;
-    align-self:flex-end;
+    align-self: flex-end;
     padding: 2.1875rem 0rem 0rem 0rem;
-    order: 3;
-    }
-
-.portada h3{
+    order: 3; }
+  main .portada h3 {
     font-family: "seasonscursiva";
-    font-weight:500;
+    font-weight: 500;
     font-size: 2.5rem;
     grid-column: 5/7;
     grid-row: 5/5;
     justify-self: center;
-    align-self:flex-start;
-    order: 2;
-    }    
-
-.portada img{
+    align-self: flex-start;
+    order: 2; }
+  main .portada img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.imgPortada {
+    object-fit: cover; }
+  main .portada .imgPortada {
     align-items: center;
     grid-column: 1/7;
     grid-row: 1/8;
-    order: 1;
-}
+    order: 1; }
 
-.sectionQuienesSomos{
-    color: white;
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,1fr);
-}
-
-.sectionQuienesSomos span {
+main .sectionQuienesSomos {
+  color: white;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+  main .sectionQuienesSomos span {
     font-size: 1.25rem;
-    font-weight:550;
-}
-
-.sectionQuienesSomos img{
+    font-weight: 550; }
+  main .sectionQuienesSomos img {
     width: 100%;
-    height: 100%;    
-    object-fit: cover;
-}
-
-.sectionQuienesSomos h1{
+    height: 100%;
+    object-fit: cover; }
+  main .sectionQuienesSomos h1 {
     text-align: center;
-    font-weight:900;
+    font-weight: 900;
     font-size: 1.375rem;
     font-family: "seasons";
     font-style: italic;
@@ -161,131 +105,96 @@ header{
     margin: .0625rem 170px .0625rem .0625rem;
     grid-column: 4/6;
     grid-row: 1/2;
-    order: 4;
-}
-
-.sectionQuienesSomos p{
+    order: 4; }
+  main .sectionQuienesSomos p {
     text-align: left;
-    font-size:  1rem;
+    font-size: 1rem;
     font-family: "trebuc";
     grid-column: 1/3;
     grid-row: 1/5;
     order: 3;
     align-self: center;
-    padding: 1.25rem;
-}
-
-.rectanguloquienessomos{
+    padding: 1.25rem; }
+  main .sectionQuienesSomos .rectanguloquienessomos {
     background-color: #232020bf;
     grid-column: 1/3;
     grid-row: 1/5;
     box-shadow: .3125rem .0625rem .625rem black;
-    order: 2;
-}
-
-.sectionQuienesSomosImg{
+    order: 2; }
+  main .sectionQuienesSomos .sectionQuienesSomosImg {
     grid-column: 1/6;
     grid-row: 1/5;
-    order: 1; 
-}
+    order: 1; }
 
-.sectionTituloDegu{
-    color: white;
-    font-family: "seasons";
-    text-align: center;
-}
-
-.sectionTituloDegu{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-} 
-
-.sectionTituloDegu img{
+main .sectionTituloDegu {
+  color: white;
+  font-family: "seasons";
+  text-align: center;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+  main .sectionTituloDegu img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
-}
-
-.sectionTituloDegu h1{
+    object-fit: cover; }
+  main .sectionTituloDegu h1 {
     font-size: 1.875rem;
-    width: 60%; 
+    width: 60%;
     grid-column: 1/2;
     grid-row: 3/4;
     justify-self: center;
     align-self: center;
-    order: 6;
-}
-
-.sectionTituloDegu p{
+    order: 6; }
+  main .sectionTituloDegu p {
     font-size: 1.125rem;
-    width: 60%; 
+    width: 60%;
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: center;
     align-self: end;
-    order: 5;
-}
-
-.sectionimgdegu-1-salon{
+    order: 5; }
+  main .sectionTituloDegu .sectionimgdegu-1-salon {
     grid-column: 4/5;
     grid-row: 1/5;
-    margin:.625rem;
-    order: 4;
-}
-
-.sectionimgdegu-2-mesa{
+    margin: .625rem;
+    order: 4; }
+  main .sectionTituloDegu .sectionimgdegu-2-mesa {
     grid-column: 2/4;
     grid-row: 3/5;
-    margin:.625rem;
-    order: 3;
-    
-}
-.sectionimgdegu-3-gente{
+    margin: .625rem;
+    order: 3; }
+  main .sectionTituloDegu .sectionimgdegu-3-gente {
     grid-column: 2/4;
     grid-row: 1/3;
-    margin:.625rem;
-    order: 2;
-}
-
-.sectionimgdegu-4{
-    background-color: #232020d4;
+    margin: .625rem;
+    order: 2; }
+  main .sectionTituloDegu .sectionimgdegu-4 {
+    background-color: #232020bf;
     grid-column: 1/2;
     grid-row: 1/5;
-    box-shadow: .3125rem .0625rem 5px black;
-    order: 1;
-}
+    box-shadow: .3125rem .0625rem .625rem black;
+    order: 1; }
 
-.proximosEventos{
-    color: white
-}
-
-.proximosEventos{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(5,1fr);
-    font-size: 0rem;
-
-}
-
-.proximosEventos img{
+main .proximosEventos {
+  color: white;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  font-size: 0rem; }
+  main .proximosEventos img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.proximosEventosImg{
+    object-fit: cover; }
+  main .proximosEventos .proximosEventosImg {
     grid-column: 3/7;
     grid-row: 1/6;
     justify-content: left;
-    order: 1;
-}
-
-.proximosEventos h1{
+    order: 1; }
+  main .proximosEventos h1 {
     grid-column: 1/3;
     grid-row: 2/3;
     font-size: 1.875rem;
@@ -293,14 +202,10 @@ header{
     text-align: center;
     text-align: center;
     align-self: end;
-    order: 3;
-}
-
-.proximosEventos span{
-    font-size: 1.125rem;
-}
-
-.proximosEventos h2{
+    order: 3; }
+  main .proximosEventos span {
+    font-size: 1.125rem; }
+  main .proximosEventos h2 {
     grid-column: 1/3;
     grid-row: 3/4;
     font-size: 1.25rem;
@@ -309,115 +214,80 @@ header{
     color: #D6B970;
     text-align: center;
     align-self: center;
-    justify-self: center; 
-    order: 4;
-}
-
-.proximosEventos p{
+    justify-self: center;
+    order: 4; }
+  main .proximosEventos p {
     grid-column: 1/3;
     grid-row: 3/6;
-    width: 60%; 
+    width: 60%;
     font-size: 1.25rem;
     font-family: "trebuc";
     text-align: center;
     align-self: center;
     justify-self: center;
-    order: 5;
-}
-
-.proximosEventosRectangulo{
-    background-color: #232020d4;
+    order: 5; }
+  main .proximosEventos .proximosEventosRectangulo {
+    background-color: #232020bf;
     grid-column: 1/3;
     grid-row: 1/7;
-    box-shadow: .3125rem .0625rem 5px black;
-    order: 2;
-}
+    box-shadow: .3125rem .0625rem .625rem black;
+    order: 2; }
 
-.contactanosencuesta div{
-    color: white;
-    font-size: 1.25rem;
-    font-family: "trebuc";
-    gap: .625rem;
-    display: flex;
-    flex-direction: column;
-}
-.nombre input {
-    color: white;
-    font-size: 1rem;
-    font-family: "trebuc";
-    padding: 1.25rem 15.625rem;
-    border:0; 
-    background-color: #232020b5;
-    box-shadow: .3125rem .0625rem 5px black;
-    }
-
-.apellido input {
+main .contactanosencuesta div {
+  color: white;
+  font-size: 1.25rem;
+  font-family: "trebuc";
+  gap: .625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none; }
+  main .contactanosencuesta div input {
     color: white;
     font-size: 1rem;
     font-family: "trebuc";
     padding: 1.25rem 15.625rem;
-    border:0; 
-    background-color: #232020b5;
-    box-shadow: .3125rem .0625rem 5px black;
-    }
-
-.email input {
-    font-size: 1rem;
-    font-family: "trebuc";
-    padding: 1.25rem 15.625rem;
-    border:0; 
-    background-color: #232020b5;
-    box-shadow: .3125rem .0625rem 5px black;
-    color: white;
-    }
-
-.mensaje textarea {
+    border: 0;
+    background-color: #232020bf;
+    box-shadow: .3125rem .0625rem .625rem black; }
+  main .contactanosencuesta div .mensaje textarea {
     padding: .25rem 12.5rem;
     font-size: 1rem;
     font-family: "trebuc";
-    border:0; 
-    background-color: #232020b5;
-    box-shadow: .3125rem .0625rem 5px black;
-    color: white;
-    }    
+    border: 0;
+    background-color: #232020bf;
+    box-shadow: .3125rem .0625rem .625rem black;
+    color: white; }
 
-.contactanos{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-}
-
-.contactanosencuesta{
+main .contactanos {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+  main .contactanos .contactanosencuesta {
     grid-column: 2/4;
     grid-row: 1/5;
     align-self: center;
     justify-self: center;
-    order: 2;
-}
-
-.contactanos img{
+    order: 2; }
+  main .contactanos img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.contactanosimg{
+    object-fit: cover; }
+  main .contactanos .contactanosimg {
     grid-column: 1/5;
     grid-row: 1/5;
-    order: 1;
-}
+    order: 1; }
 
 footer {
-    background-color:#232020;
-    width: 100%;
-    height: 100%;
-}
-
-.direcciones {
+  background-color: #232020;
+  width: 100%;
+  height: 100%; }
+  footer .direcciones {
     display: flex;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 3.125rem;
@@ -425,465 +295,324 @@ footer {
     font-family: "trebuc";
     text-align: center;
     list-style-type: none;
-    box-shadow: .3125rem .9375rem 3.125rem;
-}
-
-.direcciones li a {
-    text-decoration: none;
-    list-style: none;
-    color: white;   
-}
-
-.direcciones img {
+    box-shadow: .3125rem .9375rem 3.125rem; }
+  footer a {
+    color: white; }
+  footer img {
     width: 100%;
-    height: 100%;
-    
-} 
-
-.direcciones img {
+    height: 100%; }
+  footer .direcciones img {
     width: 1.25rem;
-    height: 1.25rem;
-} 
+    height: 1.25rem; }
 
-@media (max-width:1050px){
-    .sectionQuienesSomos h1{
-        margin: .0625rem 8.125rem .0625rem .0625rem; 
-    }
-}
+nav .barraDeTarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  font-size: 1.25rem;
+  font-family: "seasons";
+  list-style: none;
+  background-color: #232020b5;
+  box-shadow: .3125rem .9375rem 3.125rem black; }
 
-@media (max-width:1024px){
-    .sectionQuienesSomos p{
-        font-size: .875rem;
-        padding: .875rem;
-    }
-    .sectionTituloDegu h1{
-        font-size: 1.375rem;    
-    }
-    .sectionTituloDegu p{
-        font-size: 1rem;
-    }
-    .sectionQuienesSomos h1{
-        margin: .0625rem 1.875rem .0625rem .0625rem; 
-    } 
-}    
+nav a {
+  color: #D6B970; }
+  nav a:hover {
+    color: white; }
 
+@media (max-width: 1050px) {
+  main .sectionQuienesSomos h1 {
+    margin: .0625rem 8.125rem .0625rem .0625rem; } }
 
-@media (max-width:950px){
-    .sectionQuienesSomosImg{
-        display: none;       
-    }
-    .sectionQuienesSomos{
-        background-image: url(../assets/quienes-somos2.png);
-        background-size: cover;
-        background-position: center;
-    }
-    .sectionQuienesSomos{
-        display: grid;
-        width: 100%;
-        height: 180vh;
-        grid-template-columns: repeat(7,1fr);
-        grid-template-rows: repeat(7,1fr);
-    }
+@media (max-width: 1024px) {
+  main .sectionQuienesSomos h1 {
+    font-size: 1.375rem; }
+  main .sectionQuienesSomos p {
+    font-size: .875rem;
+    padding: .625rem; }
+  main .sectionTituloDegu p {
+    font-size: 1rem; }
+  main .sectionTituloDegu h1 {
+    margin: .0625rem 1.875rem .0625rem .0625rem; } }
 
-    .sectionQuienesSomos img{
-        width: 100%;
-        height: 100%;    
-        object-fit: cover;
-    }
+@media (max-width: 950px) {
+  main .sectionQuienesSomos {
+    background-image: url(../assets/quienes-somos2.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    width: 100%;
+    height: 180vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr); }
+    main .sectionQuienesSomos .sectionQuienesSomosImg {
+      display: none; }
+    main .sectionQuienesSomos .sectionQuienesSomos img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .sectionQuienesSomos h1 {
+      grid-column: 2/7;
+      grid-row: 1/2;
+      align-self: center;
+      justify-self: center;
+      order: 4; }
+    main .sectionQuienesSomos p {
+      text-align: center;
+      font-size: 1rem;
+      grid-column: 1/8;
+      grid-row: 5/8;
+      order: 3;
+      align-self: center;
+      padding: 1rem;
+      margin: 1rem; }
+    main .sectionQuienesSomos .rectanguloquienessomos {
+      background-color: #232020f1;
+      margin: .5rem;
+      grid-column: 1/8;
+      grid-row: 5/8;
+      order: 2; }
+    main .sectionQuienesSomos .Img {
+      grid-column: 1/8;
+      grid-row: 1/5;
+      order: 1; } }
 
-    .sectionQuienesSomos h1{
-        grid-column: 2/7;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        order: 4;
-    }
+@media (max-width: 850px) {
+  main .sectionQuienesSomos h1 {
+    font-size: 1.25rem; }
+  main .sectionQuienesSomos p {
+    font-size: .875rem;
+    padding: .625rem;
+    margin: .625rem; }
+  main .sectionQuienesSomos .rectanguloquienessomos {
+    background-color: #232020f1;
+    margin: .625rem; } }
 
-    .sectionQuienesSomos p{
-        text-align: center;
-        font-size:  1rem;
-        grid-column: 1/8;
-        grid-row: 5/8;
-        order: 3;
-        align-self: center;
-        padding: 1rem;
-        margin: 1rem;
-    }
+@media (max-width: 750px) {
+  header {
+    width: 100%;
+    height: 14.375rem; }
+    header .logoOsadia {
+      height: 40%; }
+  nav .barraDeTarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    gap: .125rem; }
+  main .sectionTituloDegu h1 {
+    width: 80%; }
+  main .sectionTituloDegu p {
+    width: 80%; }
+  main .proximosEventos h1 {
+    font-size: 1.75rem; }
+  main .contactanos .nombre input {
+    padding: 1.25rem 4.375rem; }
+  main .contactanos .apellido input {
+    padding: 1.25rem 4.375rem; }
+  main .contactanos .email input {
+    padding: 1.25rem 4.375rem; }
+  main .contactanos .mensaje textarea {
+    padding: .25rem 5.625rem; }
+  footer .direcciones {
+    width: 100%;
+    height: 4.6875rem;
+    align-self: center;
+    font-size: 1.125rem; }
+  footer .direcciones img {
+    width: 1.125rem;
+    height: 1.125rem;
+    text-align: center; } }
 
-    .rectanguloquienessomos{
-        background-color: #232020f1;
-        margin: .5rem;
-        grid-column: 1/8;
-        grid-row: 5/8;
-        order: 2;
-    }
+@media (max-width: 700px) {
+  main .sectionQuienesSomos {
+    width: 100%;
+    height: 210vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: initial;
+    margin-top: .25rem; }
+    main .sectionQuienesSomos p {
+      text-align: center;
+      font-size: 1rem;
+      align-self: center;
+      padding: .5rem;
+      margin: .9375rem .625rem .9375rem .625rem; }
+    main .sectionQuienesSomos .rectanguloquienessomos {
+      background-color: #232020f1;
+      margin: .5rem; }
+  main .sectionTituloDegu {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr); }
+    main .sectionTituloDegu img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .sectionTituloDegu h1 {
+      font-size: 1.5rem;
+      grid-column: 1/3;
+      grid-row: 1/2;
+      align-self: flex-end;
+      padding: .625rem;
+      width: 100%;
+      order: 6; }
+    main .sectionTituloDegu p {
+      font-size: .875rem;
+      grid-column: 1/3;
+      grid-row: 2/2;
+      align-self: center;
+      padding: .875rem;
+      width: 96%;
+      order: 5; }
+    main .sectionTituloDegu .sectionimgdegu-1-salon {
+      grid-column: 3/5;
+      grid-row: 1/13;
+      margin: .25rem;
+      order: 4; }
+    main .sectionTituloDegu .sectionimgdegu-2-mesa {
+      grid-column: 1/3;
+      grid-row: 3/8;
+      margin: .25rem;
+      order: 3; }
+    main .sectionTituloDegu .sectionimgdegu-3-gente {
+      grid-column: 1/3;
+      grid-row: 8/13;
+      margin: .25rem;
+      order: 2; }
+    main .sectionTituloDegu .sectionimgdegu-4 {
+      margin: .25rem;
+      background-color: #232020d4;
+      grid-column: 1/3;
+      grid-row: 1/3;
+      box-shadow: .3125rem .0625rem 5px black;
+      order: 1; }
+  main .proximosEventos {
+    width: 100%;
+    height: 150vh;
+    background-image: url("../../assets/copa de vino blanco2.png");
+    background-size: cover;
+    background-position: center; }
+    main .proximosEventos .proximosEventosImg {
+      display: none; } }
 
-    .sectionQuienesSomosImg{
-        grid-column: 1/8;
-        grid-row: 1/5;
-        order: 1; 
-    }
-}
+@media (max-width: 640px) {
+  main .sectionQuienesSomos {
+    width: 100%;
+    height: 210vh; }
+    main .sectionQuienesSomos h1 {
+      font-size: 1.125rem;
+      margin: .3125rem; }
+    main .sectionQuienesSomos p {
+      padding: .5rem;
+      margin: .05rem; }
+    main .sectionQuienesSomos .rectanguloquienessomos {
+      width: 100%;
+      height: 100vh;
+      justify-self: center; }
+  main .proximosEventos h1 {
+    font-size: 1.5rem;
+    padding: .625rem; }
+  main .proximosEventos p {
+    font-size: 1.125rem; }
+  footer .direcciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    width: 100%;
+    height: 4.6875rem;
+    padding: .3125rem; } }
 
-@media (max-width:850px){
+@media (max-width: 550px) {
+  main .proximosEventos p {
+    font-size: 1rem; }
+  main .sectionQuienesSomos {
+    width: 100%;
+    height: 220vh; }
+    main .sectionQuienesSomos h1 {
+      font-size: 1rem;
+      margin: .1875rem; }
+    main .sectionQuienesSomos p {
+      padding: .625rem;
+      margin: .625rem; }
+    main .sectionQuienesSomos .rectanguloquienessomos {
+      width: 100%;
+      height: 110vh;
+      justify-self: center; } }
 
-    .sectionQuienesSomos h1{
-        font-size:  1.25rem;
-    }
+@media (max-width: 500px) {
+  main .contactanos .contactanosencuesta div {
+    font-size: 1.125rem; }
+    main .contactanos .contactanosencuesta div .nombre input {
+      padding: 1.25rem 3.125rem; }
+    main .contactanos .contactanosencuesta div .apellido input {
+      padding: 1.25rem 3.125rem; }
+    main .contactanos .contactanosencuesta div .email input {
+      padding: 1.25rem 3.125rem; }
+    main .contactanos .contactanosencuesta div .mensaje textarea {
+      padding: .25rem 3.125rem; } }
 
-    .sectionQuienesSomos p{
-        font-size:  .875rem;
-        padding: .625rem;
-        margin: .625rem;
-    }
+@media (max-width: 480px) {
+  main .sectionQuienesSomos .rectanguloquienessomos {
+    width: 100%;
+    height: 120vh;
+    justify-self: center; } }
 
-    .rectanguloquienessomos{
-        background-color: #232020f1;
-        margin:.625rem;
-    }
-}
-@media (max-width:750px){
-    .logoOsadia{
-        height: 40%;
-    }
-    header{
-        width: 100%;
-        height: 14.375rem;
-    }
-    .barraDeTarea{
-        display: flex;
-        flex-direction: column;
-        font-size: 1.25rem;
-        gap: .125rem;    
-    }
-    .direcciones div{  
-        width: 100%;
-        height: .9375rem;
-        align-self: center;
-        font-size: .875rem;   
-        text-align: center;    
-    }
-    .direcciones img{
-            width: 1rem;
-            height: 1rem;
-            text-align: center;
-        }
+@media (max-width: 460px) {
+  main .proximosEventos p {
+    font-size: .875rem; } }
 
-    .sectionTituloDegu h1{
-        width: 80%;
-        }
+@media (max-width: 430px) {
+  main .sectionQuienesSomos {
+    width: 100%;
+    height: 220vh; }
+    main .sectionQuienesSomos .rectanguloquienessomos {
+      width: 100%;
+      height: 130vh;
+      justify-self: center; } }
 
-    .sectionTituloDegu p{
-        width: 80%;
-    } 
-    
-    .proximosEventos h1{
-        font-size: 1.75rem;
-    }    
-    
-    .nombre input {
-        padding: 1.25rem 4.375rem;
-        }
-    .apellido input {
-        padding: 1.25rem 4.375rem;
-        }
-    .email input {
-        padding: 1.25rem 4.375rem;
-        }
-    .mensaje textarea {
-        padding: .25rem 5.625rem;
-        } 
-}    
+@media (max-width: 400px) {
+  main .portada h1 {
+    font-size: 2.5rem; }
+  main .portada h2 {
+    font-size: 2.8125rem; }
+  main .portada h3 {
+    font-size: 1.875rem; }
+  main .sectionQuienesSomos .rectanguloquienessomos {
+    width: 100%;
+    height: 140vh; }
+  main .proximosEventos h1 {
+    font-size: 1.25rem; }
+  main .proximosEventos h2 {
+    font-size: 1.125rem; }
+  main .proximosEventos span {
+    font-size: .875rem; }
+  main .proximosEventos p {
+    font-size: .875rem; } }
 
-@media (max-width:700px){
+@media (max-width: 375px) {
+  main .contactanos .contactanosencuesta div .nombre input {
+    padding: 1rem 1rem; }
+  main .contactanos .contactanosencuesta div .apellido input {
+    padding: 1rem 1rem; }
+  main .contactanos .contactanosencuesta div .email input {
+    padding: 1rem 1rem; }
+  main .contactanos .contactanosencuesta div .mensaje textarea {
+    padding: .25rem 1rem; }
+  main .sectionQuienesSomos {
+    width: 100%;
+    height: 230vh; }
+    main .sectionQuienesSomos .rectanguloquienessomos {
+      width: 100%;
+      height: 160vh;
+      justify-self: center; } }
 
-    .sectionQuienesSomos{
-        display: grid;
-        width: 100%;
-        height: 210vh;
-    }
-
-    .sectionQuienesSomos p{
-        text-align: center;
-        font-size:  1rem;
-        align-self: center;
-        padding: .5rem;
-        margin: .9375rem .625rem .9375rem .625rem;
-    
-    }
-
-    .rectanguloquienessomos{
-        background-color: #232020f1;
-        margin:  .5rem;
-    }
-
-    .sectionQuienesSomos{
-        background-image: url(../assets/quienes-somos2.png);
-        background-size:contain;
-        background-repeat: no-repeat;
-        background-position: initial;
-        margin-top: .25rem;
-        order: 1; 
-    } 
-
-    .sectionTituloDegu{
-        display: grid;
-        width: 100%;
-        height: 100vh;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(12,1fr);
-    } 
-    
-    .sectionTituloDegu img{
-        width: 100%;
-        height: 100%;
-        object-fit:cover;
-    }
-    
-    .sectionTituloDegu h1{
-        font-size: 1.5rem; 
-        grid-column: 1/3;
-        grid-row: 1/2;
-        align-self:flex-end;
-        padding: .625rem;
-        width: 100%;
-        order: 6;
-    }
-    
-    .sectionTituloDegu p{
-        font-size: .875rem;
-        grid-column: 1/3;
-        grid-row: 2/2;
-        align-self: center;
-        padding: .875rem;
-        width: 96%;
-        order: 5;
-    }
-    
-    .sectionimgdegu-1-salon{
-        grid-column: 3/5;
-        grid-row: 1/13;
-        margin:.25rem;
-        order: 4;
-    }
-    
-    .sectionimgdegu-2-mesa{
-        grid-column: 1/3;
-        grid-row: 3/8;
-        margin: .25rem;
-        order: 3;
-        
-    }
-    .sectionimgdegu-3-gente{
-        grid-column: 1/3;
-        grid-row: 8/13;
-        margin:.25rem;
-        order: 2;
-    }
-    
-    .sectionimgdegu-4{
-        margin:.25rem;
-        background-color: #232020d4;
-        grid-column: 1/3;
-        grid-row: 1/3;
-        box-shadow: .3125rem .0625rem 5px black;
-        order: 1;
-    }
-
-    .proximosEventosImg{
-        display: none;       
-    }
-    .proximosEventos{
-        background-image: url(../assets/copa\ de\ vino\ blanco2.png);
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-@media (max-width:640px){
-
-        .proximosEventos{
-            background-image: url(../assets/copa\ de\ vino\ blanco2.png);
-        }
-
-        .direcciones{  
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 4.6875rem; 
-            padding: .3125rem;     
-        }
-
-        .proximosEventos h1{
-            font-size: 1.5rem;
-            padding: .625rem;
-        }
-        .proximosEventos p{
-            font-size: 1.125rem;
-        }
-        .sectionQuienesSomos{
-            width: 100%;
-            height: 210vh;
-        }
-    
-        .sectionQuienesSomos h1{
-            font-size: 1.125rem;
-            margin: .3125rem;
-        }
-
-        .sectionQuienesSomos p{
-            padding: .5rem;
-            margin: .05rem;
-        }
-    
-        .rectanguloquienessomos{
-            width: 100%;
-            height: 100vh;
-            justify-self: center;
-        }
-    }
-
-    @media (max-width:550px){
-        .proximosEventos p{
-            font-size: 1rem;
-        }
-
-        .sectionQuienesSomos{
-            width: 100%;
-            height: 220vh;
-        }
-        .sectionQuienesSomos h1{
-            font-size: 1rem;
-            margin: .1875rem;
-        }
-
-        .sectionQuienesSomos p{
-            padding: .625rem;
-            margin: .625rem;
-        }
-    
-        .rectanguloquienessomos{
-            width: 100%;
-            height: 110vh;
-            justify-self: center;
-        }
-    }    
-    @media (max-width:500px){
-    .contactanosencuesta div{
-        font-size: 1.125rem;
-        }
-    .nombre input {
-        padding: 1.25rem 3.125rem;
-        }
-    .apellido input {
-        padding: 1.25rem 3.125rem;
-        }
-    .email input {
-        padding: 1.25rem 3.125rem;
-        }
-    .mensaje textarea {
-        padding: .25rem 3.125rem;
-        } 
-    } 
-    @media (max-width:480px){
-
-    .rectanguloquienessomos{
-        width: 100%;
-        height: 120vh;
-        justify-self: center;
-    }
-}
-
-    @media (max-width:460px){
-        .proximosEventos p{
-            font-size: .875rem;
-        }
-    }  
-
-    @media (max-width:430px){
-        .sectionQuienesSomos{
-            width: 100%;
-            height: 220vh;
-        }
-
-        .rectanguloquienessomos{
-            width: 100%;
-            height: 130vh;
-            justify-self: center;
-        }
-    }
-
-    @media (max-width:400px){
-        .proximosEventos h1{
-            font-size: 1.125rem;
-        }
-        .proximosEventos h2{
-            font-size: 1rem;
-        }
-        .proximosEventos span{
-            font-size: .875rem; 
-        }
-        .proximosEventos p{
-            font-size: .875rem;
-
-        }
-        .portada h1{
-            font-size: 2.5rem;
-            }
-        
-        .portada h2{
-            font-size: 2.8125rem;
-            }
-        
-        .portada h3{
-            font-size: 1.875rem;
-            }  
-            
-        .sectionQuienesSomos{
-            width: 100%;
-            height: 220vh;
-        }
-
-        .rectanguloquienessomos{
-            width: 100%;
-            height: 140vh;
-            justify-self: center;
-        }        
-    } 
-    
-
-    @media (max-width:375px){
-
-        .nombre input {
-            padding: 1.25rem 1.25rem;
-            }
-        .apellido input {
-            padding: 1.25rem 1.25rem;
-            }
-        .email input {
-            padding: 1.25rem 1.25rem;
-            }
-        .mensaje textarea {
-            padding: .25rem 1.25rem;
-            } 
-
-        .sectionQuienesSomos{
-            width: 100%;
-            height: 230vh;
-        }
-
-        .rectanguloquienessomos{
-            width: 100%;
-            height: 160vh;
-            justify-self: center;
-        }
-    }        
-        
-    @media (max-width:330px){
- 
-    .rectanguloquienessomos{
-        width: 100%;
-        height: 170vh;
-        justify-self: center;
-    }
-}
+@media (max-width: 330px) {
+  main .sectionQuienesSomos .rectanguloquienessomos {
+    width: 100%;
+    height: 170vh;
+    justify-self: center; } }

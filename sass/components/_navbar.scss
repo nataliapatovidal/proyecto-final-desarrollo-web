@@ -1,0 +1,16 @@
+nav{
+.barraDeTarea{
+    @include flex(row,space-around,none);
+    font-size: 1.25rem;
+    font-family: "seasons";
+    list-style: none;
+    background-color:#232020b5; 
+    box-shadow: .3125rem .9375rem 3.125rem black;
+}
+        a{
+        color: #D6B970;  
+        &:hover{
+        color: white;
+        }
+    }
+}
