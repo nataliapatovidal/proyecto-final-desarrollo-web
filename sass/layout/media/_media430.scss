@@ -1,13 +1,21 @@
 @media (max-width:430px){
-main{
-    .sectionQuienesSomos{
-        width: 100%;
-        height: 220vh;   
-        .rectanguloquienessomos{
+    main{
+        .sectionQuienesSomos{
             width: 100%;
-            height: 130vh;
-            justify-self: center;
+            height: 240vh;
+            .rectanguloquienessomos{
+                width: 100%;
+                height: 80vh;
+            }
+            .sectionQuienesSomosp1{
+                padding: 1.25rem .625rem 0rem .625rem;
+            }
+            .sectionQuienesSomosp2{
+                padding: 0rem .625rem .9375rem .625rem; 
+            }
+            .rectanguloquienessomos1{ 
+                margin: 0rem 0rem 9.375rem 0rem;                   
+            }
         }
-        }
-    }
+    } 
 }
