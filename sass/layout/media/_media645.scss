@@ -2,12 +2,13 @@
     main{
         .sectionQuienesSomos {
             width: 100%;
-            height: 260vh;
+            height: 250vh;
             .sectionQuienesSomosp{                
                 padding: .625rem 1.375rem .625rem 1.375rem;                              
             }
             .rectanguloquienessomos{
-                margin: 0rem 0rem 1.625rem 0rem;        
+                margin: 0rem 0rem .625rem 0rem;
+                padding: 20px 0rem 1.875rem .625rem;        
             }
             span{   
                 font-size: .875rem;       
@@ -18,11 +19,8 @@
             .sectionQuienesSomosImg2{
                 padding: 0rem 1.875rem 0rem 5rem;
             }
-            .rectanguloquienessomos1{
-                margin: 12.5rem 0rem 6.875rem 0rem;        
-            }
             .sectionQuienesSomosp1{
-                padding: 1.5rem .625rem 0rem .625rem;
+                padding: 1.25rem .625rem 0rem .625rem;
             }  
             .sectionQuienesSomosp2{
                 padding: 0rem .625rem .625rem .625rem;

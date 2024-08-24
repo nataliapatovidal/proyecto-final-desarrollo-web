@@ -8,7 +8,7 @@
         .sectionQuienesSomos{
             display: grid;
             width: 100%;
-            height: 250vh; 
+            height: 260vh; 
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(8,1fr);   
             .sectionQuienesSomos img{
@@ -30,12 +30,11 @@
                 order: 6;                    
             }
             .rectanguloquienessomos{
+                padding: 1.875rem 0rem 440px 0rem;
+                margin: 0rem 0rem 1.25rem 0rem;
                 grid-column: 1/4;
                 grid-row: 4/6;
-                order: 5;
-                width: 100%;
-                height: 70vh;
-                justify-self: center;
+                order: 5;     
             }
             .sectionQuienesSomosImg{
                 grid-column: 1/4;
@@ -55,7 +54,7 @@
                 order: 4; 
             }        
             .sectionQuienesSomosp1{
-                padding: 2.5rem .625rem 0rem .625rem;
+                padding: 1.25rem .625rem 0rem .625rem;
                 align-self:self-start;
                 grid-column: 1/4;
                 grid-row: 8/9;
@@ -68,12 +67,6 @@
                 grid-row: 8/9;
                 order: 8;  
             } 
-            .rectanguloquienessomos1{
-                grid-column: 1/4;
-                grid-row: 5/9;   
-                margin: 12.5rem 0rem 10rem 0rem;                   
-                order: 3;
-            }
         }        
     }
 }
