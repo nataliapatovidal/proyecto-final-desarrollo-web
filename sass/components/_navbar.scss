@@ -1,12 +1,11 @@
 nav{
     
 .barraDeTarea{
-    background-color:#232020b5; 
-    box-shadow: .3125rem .9375rem 3.125rem black;
     @include flex(row,space-around,none);
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-family: "seasons";
     list-style: none;
+    gap: 1.75rem;
 }
         a{
         color: #D6B970;  
@@ -14,4 +13,7 @@ nav{
         color: white;
         }
     }   
+    .cerrar-menu{
+        display: none;
+    }
 }

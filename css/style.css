@@ -24,16 +24,17 @@ a {
   src: url("../assets/fonts/trebuc.ttf"); }
 
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #232020;
-  width: 100%;
-  height: 8.125rem; }
+  padding: 2rem;
+  text-align: center; }
   header .logoOsadia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: none;
-    width: 100%;
-    height: 75%; }
+    max-width: 12.5rem; }
+  header .abrir-menu {
+    display: none; }
 
 main .portada {
   color: white;
@@ -336,20 +337,22 @@ footer {
     height: 1.25rem; }
 
 nav .barraDeTarea {
-  background-color: #232020b5;
-  box-shadow: .3125rem .9375rem 3.125rem black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: none;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-family: "seasons";
-  list-style: none; }
+  list-style: none;
+  gap: 1.75rem; }
 
 nav a {
   color: #D6B970; }
   nav a:hover {
     color: white; }
+
+nav .cerrar-menu {
+  display: none; }
 
 @media (max-width: 1350px) {
   main .sectionQuienesSomos h1 {
@@ -477,6 +480,52 @@ nav a {
       padding: .625rem 1.875rem 0rem 7.5rem; } }
 
 @media (max-width: 860px) {
+  header .abrir-menu {
+    display: block;
+    border: 0;
+    font-size: 1.875rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    align-items: center; }
+  nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: end;
+    gap: 1.75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.75rem;
+    background-color: #232020;
+    box-shadow: .3125rem .0625rem .625rem black; }
+    nav .barraDeTarea {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: end; }
+    nav .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.875rem;
+      background-color: transparent;
+      color: white;
+      align-items: center;
+      cursor: pointer; }
+    nav.visible {
+      opacity: 1;
+      visibility: visible; }
+  main .contactanosencuesta div .nombre input {
+    padding: 1.25rem 3.75rem; }
+  main .contactanosencuesta div .apellido input {
+    padding: 1.25rem 60px; }
+  main .contactanosencuesta div .email input {
+    padding: 1.25rem 3.75rem; }
+  main .contactanosencuesta div .mensaje textarea {
+    padding: .25rem 5.625rem; }
   main .sectionQuienesSomos {
     width: 100%;
     height: 320vh; }
@@ -486,31 +535,12 @@ nav a {
       padding: .875rem 2.5rem .625rem 2.5rem; } }
 
 @media (max-width: 750px) {
-  header {
-    width: 100%;
-    height: 14.375rem; }
-    header .logoOsadia {
-      height: 40%; }
-  nav .barraDeTarea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.25rem;
-    gap: .125rem; }
   main .sectionTituloDegu h1 {
     width: 80%; }
   main .sectionTituloDegu p {
     width: 80%; }
   main .proximosEventos h1 {
     font-size: 1.75rem; }
-  main .contactanos .nombre input {
-    padding: 1.25rem 4.375rem; }
-  main .contactanos .apellido input {
-    padding: 1.25rem 4.375rem; }
-  main .contactanos .email input {
-    padding: 1.25rem 4.375rem; }
-  main .contactanos .mensaje textarea {
-    padding: .25rem 5.625rem; }
   main .sectionQuienesSomos {
     width: 100%;
     height: 276vh; }
