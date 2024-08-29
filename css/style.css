@@ -325,16 +325,17 @@ footer {
     font-size: 1.25rem;
     font-family: "trebuc";
     text-align: center;
+    justify-self: center;
     list-style-type: none;
     box-shadow: .3125rem .9375rem 3.125rem; }
   footer a {
     color: white; }
-  footer img {
-    width: 100%;
-    height: 100%; }
-  footer .direcciones img {
-    width: 1.25rem;
-    height: 1.25rem; }
+  footer .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; }
 
 nav .barraDeTarea {
   display: flex;
@@ -356,11 +357,11 @@ nav .cerrar-menu {
 
 .btn-wsp {
   position: fixed;
-  width: 3.4375rem;
-  height: 3.4375rem;
+  width: 3.125rem;
+  height: 3.125rem;
   line-height: 3.4375rem;
-  bottom: 1.875rem;
-  right: 1.875rem;
+  bottom: 2.75rem;
+  right: 1.25rem;
   background: #0df053;
   color: white;
   border-radius: 3.125rem;
@@ -580,16 +581,7 @@ nav .cerrar-menu {
     main .sectionQuienesSomos .sectionQuienesSomosImg1 {
       padding: .625rem 15.625rem 0rem 1.875rem; }
     main .sectionQuienesSomos .sectionQuienesSomosImg2 {
-      padding: .625rem 1.875rem 0rem 7.5rem; }
-  footer .direcciones {
-    width: 100%;
-    height: 4.6875rem;
-    align-self: center;
-    font-size: 1.125rem; }
-  footer .direcciones img {
-    width: 1.125rem;
-    height: 1.125rem;
-    text-align: center; } }
+      padding: .625rem 1.875rem 0rem 7.5rem; } }
 
 @media (max-width: 700px) {
   main .sectionTituloDegu {
