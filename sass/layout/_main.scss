@@ -136,69 +136,48 @@ main{
 
     .sectionTituloDegu{
     color: map-get($colores, color2);
+    padding: 1.875rem 1.875rem 1.875rem 1.875rem;
     font-family: "seasons";
+    justify-self: center;
+    align-self:center;
     text-align: center;
-    display: grid;
     width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit:cover;
-        }
-        h1{
-            font-size: 2rem;
-            width: 60%; 
-            grid-column: 1/2;
-            grid-row: 3/4;
-            justify-self: center;
-            align-self: center;
-            order: 6;  
-        }
+    height: 120vh;
+
         p{
             font-size: 1.25rem;
-            width: 60%; 
-            grid-column: 1/2;
-            grid-row: 2/3;
-            justify-self: center;
-            align-self: end;
-            order: 5;
-        }
-        .sectionimgdegu-1-salon{
-            grid-column: 4/5;
-            grid-row: 1/5;
-            margin:.625rem;
-            order: 4;
-        }
-        .sectionimgdegu-2-mesa{
-            grid-column: 2/4;
-            grid-row: 3/5;
-            margin:.625rem;
-            order: 3;
             
+            
+            padding: 20px 30px 20px 30px;
         }
-        .sectionimgdegu-3-gente{
-            grid-column: 2/4;
-            grid-row: 1/3;
-            margin:.625rem;
-            order: 2;
+        h1{
+            font-weight: bold;
+            font-size: 24px;
+            padding: 30px;
         }
-        .sectionimgdegu-4{
-            background-color: map-get($colores, color5);
-            grid-column: 1/2;
-            grid-row: 1/5;
-            box-shadow: .3125rem .0625rem .625rem black;
-            order: 1;
-        }
+    }
+    .carousel-caption-below {
+        text-align: center;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: .3125rem .0625rem .625rem black; 
+        color: #fff;
+        margin-top: 10px; 
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel-caption-below p {
+        margin: 0;
+      
     }
 
     .proximosEventos{
         color:map-get($colores, color2);
         display: grid;
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(5,1fr);
         font-size: 0rem;

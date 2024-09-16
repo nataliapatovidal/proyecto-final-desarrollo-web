@@ -10,7 +10,32 @@
             h3{
                 font-size: 1.875rem;
             }  
-        }         
+        }      
+        
+        .sectionTituloDegu{
+
+        .carousel-item {
+            position: relative;
+            
+            max-width: 100%;
+            }
+
+        .zoomable-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+            cursor: zoom-in;
+        }
+
+        .carousel-item:hover .zoomable-img {
+            transform: scale(1.5);
+            cursor: zoom-out; /* Cambia el cursor al hacer clic */
+            position: relative;
+            z-index: 10; 
+            }
+    }
+
+
         .proximosEventos{
             h1{
                 font-size: 1.25rem;
