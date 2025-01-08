@@ -4,14 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss ./sass/style.scss ./css/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-css": "sass --watch ./sass/style.scss ./css/style.css",
+    "sass": "sass --watch src/scss:dist/css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "sass": "^1.83.1"
   },
   "dependencies": {
     "abbrev": "^1.1.1",

@@ -8,9 +8,9 @@ nav{
     gap: 1.75rem;
 }
         a{
-        color: #D6B970;  
+        color: map-get($colores, color3);  
         &:hover{
-        color: white;
+        color: map-get($colores, color2);;
         }
     }   
     .cerrar-menu{
