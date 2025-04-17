@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -13,10 +14,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -31,58 +28,17 @@ html {
   font-family: "trebuc";
   src: url("../assets/fonts/trebuc.ttf");
 }
-@keyframes flotarSuave1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(6px, -6px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes flotarSuave2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-5px, 5px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes flotarSuave3 {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(8px, -3px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #232020;
-  padding-top: 0.5rem;
-  padding-bottom: 0.125rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding: 2rem;
   text-align: center;
 }
 header .logoOsadia {
   max-width: 12.5rem;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-header .logoOsadia:hover {
-  transform: scale(1.2);
 }
 header .abrir-menu {
   display: none;
@@ -104,7 +60,6 @@ main .portada h1 {
   grid-row: 4/4;
   justify-self: center;
   align-self: flex-start;
-  animation: flotarSuave1 4s ease-in-out infinite;
   order: 4;
 }
 main .portada h2 {
@@ -116,7 +71,6 @@ main .portada h2 {
   justify-self: center;
   align-self: flex-end;
   padding: 2.1875rem 0rem 0rem 0rem;
-  animation: flotarSuave2 5s ease-in-out infinite;
   order: 3;
 }
 main .portada h3 {
@@ -127,30 +81,32 @@ main .portada h3 {
   grid-row: 5/5;
   justify-self: center;
   align-self: flex-start;
-  animation: flotarSuave3 6s ease-in-out infinite;
   order: 2;
 }
 main .portada img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .portada .imgPortada {
   align-items: center;
   grid-column: 1/7;
   grid-row: 1/8;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   order: 1;
 }
 main .sectionQuienesSomos {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
   overflow: hidden;
   color: white;
+  /* Asegurando que la sección de imagen ocupe toda la pantalla */
+  /* Asegurando que las imágenes ocupen el 50% del ancho */
+  /* Asegura que las imágenes se ajusten correctamente */
 }
 main .sectionQuienesSomos h1 {
   text-align: center;
@@ -160,115 +116,81 @@ main .sectionQuienesSomos h1 {
   font-style: italic;
   margin: 1.5rem;
 }
-main .sectionQuienesSomos p {
+main .sectionQuienesSomos .sectionQuienesSomosp {
   text-align: center;
   font-size: 1.25rem;
   font-family: "trebuc";
-  margin: 1rem auto;
-  padding: 10px 1rem;
-  max-width: 1000px;
+  margin: 1rem;
+  padding: 0 1rem;
 }
 main .sectionQuienesSomos span {
   font-size: 1.375rem;
   font-weight: 600;
   text-align: center;
-  display: block;
 }
-main .sectionQuienesDiferentes {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-  margin-top: 2rem;
-  gap: 1rem;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-main .sectionQuienesDiferentes h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
+main .sectionQuienesSomos .sectionQuienesSomosp1 {
   text-align: center;
-  display: block;
-}
-main .sectionQuienesDiferentes p {
-  text-align: center;
-  font-size: 1.25rem;
+  font-style: italic;
   font-family: "trebuc";
-  margin: 10px auto;
-  padding: 5px 10px;
-  max-width: 1000px;
+  font-size: 1.25rem;
+  padding: 1.875rem;
+  margin: 1.25rem 0;
 }
-main .sectionQuienesDiferentes .sectionQuienesImg {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
+main .sectionQuienesSomos .sectionQuienesSomosImg {
+  padding: 0;
+  margin: 0;
+  width: 100vw; /* Esto hará que ocupe toda la pantalla */
+  height: auto;
+  box-sizing: border-box;
+  align-items: center;
 }
-main .sectionQuienesDiferentes .sectionQuienesImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-main .sectionQuienesDiferentes .sectionQuienesTexto {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  text-align: center;
-}
-main .sectionQuienesDiferentes .sectionQuienesTexto .quienesTextoCaja {
-  padding: 0.9375rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 1rem;
-}
-main .sectionQuienesDiferentes .sectionQuienesTexto .quienesTextoCaja span {
-  font-size: 1.375rem;
-  font-weight: 600;
+main .sectionQuienesSomos .sectionQuienesSomosImg1,
+main .sectionQuienesSomos .sectionQuienesSomosImg2 {
+  margin: 0;
+  padding: 1.875rem;
+  width: 50%; /* Cada una ocupa la mitad del espacio */
+  float: left; /* Asegura que estén lado a lado */
+  height: auto;
   display: block;
-  margin-bottom: 1rem;
 }
-main .sectionQuienesDiferentes .sectionQuienesTexto .quienesTextoCaja p {
-  text-align: left;
-  font-size: 1.125rem;
+main .sectionQuienesSomos img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .sectionTituloDegu {
   color: white;
+  padding: 1.875rem 1.875rem 1.875rem 1.875rem;
   font-family: "seasons";
   justify-self: center;
   align-self: center;
   text-align: center;
   z-index: 1;
   width: 100%;
-  min-height: auto;
-  padding: 1.875rem 1.875rem 1rem 1.875rem;
+  height: 120vh;
 }
 main .sectionTituloDegu p {
   font-size: 1.25rem;
   padding: 20px 30px 20px 30px;
 }
+main .sectionTituloDegu h1 {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 30px;
+}
 main .carousel-caption-below {
   text-align: center;
-  padding: 0.9375rem;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0.3125rem 0.0625rem 0.625rem black;
   color: white;
-  margin-top: 1.25rem;
-  border-radius: 1.25rem;
+  margin-top: 10px;
 }
 main .carousel-item img {
   width: 100%;
   height: auto;
-  border-radius: 0.625rem;
-  box-shadow: 0 4px 1.25rem rgba(0, 0, 0, 0.7); /* Sombra más grande y oscura */
 }
 main .carousel-caption-below p {
   margin: 0;
@@ -287,57 +209,78 @@ main .image-modal {
   cursor: pointer;
 }
 main .image-modal img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   border: 2px solid #D6B970;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 main .proximosEventos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0;
-  padding: 0rem 1.875rem 1rem 1.875rem;
-}
-main .proximosEventos .proximosEventosImg img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-}
-main .proximosEventos .proximosEventosTexto {
-  font-family: "trebuc";
   color: white;
-  max-width: 600px;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  font-size: 0rem;
 }
-main .eventoTextoCaja {
-  padding: 60px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+main .proximosEventos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-main h1 {
-  font-size: 1.75rem;
+main .proximosEventos .proximosEventosImg {
+  grid-column: 3/7;
+  grid-row: 1/6;
+  justify-content: left;
+  order: 1;
+}
+main .proximosEventos h1 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  font-size: 2rem;
   font-family: "seasons";
-  color: white;
+  text-align: center;
+  text-align: center;
+  align-self: flex-end;
+  order: 3;
 }
-main h2 {
-  font-size: 1.375rem;
+main .proximosEventos span {
+  font: size 16px;
+  font-weight: bold;
+}
+main .proximosEventos h2 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  font-size: 1.25rem;
   font-family: "trebuc";
   font-weight: bold;
   color: #D6B970;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  order: 4;
 }
-main p {
+main .proximosEventos p {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  width: 100%;
   font-size: 1.25rem;
   font-family: "trebuc";
-  color: white;
+  text-align: center;
+  align-self: center;
+  justify-self: flex-start;
+  order: 5;
 }
-
-.contactanosencuesta div {
+main .proximosEventos .proximosEventosRectangulo {
+  background-color: rgba(35, 32, 32, 0.7490196078);
+  grid-column: 1/3;
+  grid-row: 1/7;
+  box-shadow: 0.3125rem 0.0625rem 0.625rem black;
+  order: 2;
+}
+main .contactanosencuesta div {
   color: white;
   font-size: 1.25rem;
   font-family: "trebuc";
@@ -347,83 +290,54 @@ main p {
   justify-content: none;
   align-items: none;
 }
-.contactanosencuesta div input {
+main .contactanosencuesta div input {
   color: white;
   font-family: "trebuc";
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 15.625rem;
   border: 0;
   background-color: rgba(35, 32, 32, 0.7490196078);
   box-shadow: 0.3125rem 0.0625rem 0.625rem black;
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
 }
-.contactanosencuesta div .mensaje textarea {
-  padding: 0.75rem 1rem;
+main .contactanosencuesta div .mensaje textarea {
+  padding: 0.25rem 15.625rem;
   font-family: "trebuc";
   border: 0;
   background-color: rgba(35, 32, 32, 0.7490196078);
   box-shadow: 0.3125rem 0.0625rem 0.625rem black;
   color: white;
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
-  resize: none;
 }
-
-.contactanos {
+main .contactanos {
   display: grid;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
-.contactanos .contactanosencuesta {
+main .contactanos .contactanosencuesta {
   grid-column: 2/4;
   grid-row: 1/5;
   align-self: center;
   justify-self: center;
   order: 2;
 }
-.contactanos img {
+main .contactanos img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.contactanos .contactanosimg {
+main .contactanos .contactanosimg {
   grid-column: 1/5;
   grid-row: 1/5;
   order: 1;
 }
 
-.botonEnviar {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-.botonEnviar button {
-  background-color: rgba(35, 32, 32, 0.7490196078);
-  color: white;
-  padding: 1rem 2.5rem;
-  font-family: "trebuc";
-  border: none;
-  border-radius: 10px;
-  font-size: 1.25rem;
-  box-shadow: 0.3125rem 0.0625rem 0.625rem black;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  transition: transform 0.3s ease-in-out;
-}
-.botonEnviar button:hover {
-  background-color: rgba(8.3582089552, 7.6417910448, 7.6417910448, 0.7490196078);
-  transform: scale(1.2);
-}
-
 footer {
   background-color: #232020;
   width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
 }
 footer .direcciones {
   display: flex;
@@ -431,38 +345,23 @@ footer .direcciones {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  height: 3.125rem;
   font-size: 1.25rem;
   font-family: "trebuc";
-  align-items: center;
+  text-align: center;
+  justify-self: center;
   list-style-type: none;
   box-shadow: 0.3125rem 0.9375rem 3.125rem;
-  padding: 0rem 0;
 }
-
-a {
+footer a {
   color: white;
 }
-
-.logos {
+footer .logos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-}
-
-.logos {
-  transition: transform 0.3s ease-in-out;
-}
-.logos:hover {
-  transform: scale(1.2);
-}
-
-.celular {
-  transition: transform 0.3s ease-in-out;
-}
-.celular:hover {
-  transform: scale(1.2);
 }
 
 nav .barraDeTarea {
@@ -476,13 +375,10 @@ nav .barraDeTarea {
   gap: 1.75rem;
 }
 nav a {
-  display: inline-block;
   color: #D6B970;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 nav a:hover {
   color: white;
-  transform: scale(1.2);
 }
 nav .cerrar-menu {
   display: none;
@@ -509,7 +405,29 @@ nav .cerrar-menu {
   text-decoration: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1290px) {
+  main .sectionTituloDegu {
+    width: 100%;
+    height: 110vh;
+  }
+  main .contactanos {
+    width: 100%;
+    height: 120vh;
+  }
+  main .contactanos .contactanosencuesta div .nombre input {
+    padding: 0.875rem 1.875rem;
+  }
+  main .contactanos .contactanosencuesta div .apellido input {
+    padding: 0.875rem 1.875rem;
+  }
+  main .contactanos .contactanosencuesta div .email input {
+    padding: 0.875rem 1.875rem;
+  }
+  main .contactanos .contactanosencuesta div .mensaje textarea {
+    padding: 0.125rem 0.875rem;
+  }
+}
+@media (max-width: 860px) {
   header .abrir-menu {
     display: block;
     border: 0;
@@ -554,52 +472,43 @@ nav .cerrar-menu {
     opacity: 1;
     visibility: visible;
   }
-  main .sectionQuienesDiferentes {
-    flex-direction: column;
+  main .sectionQuienesSomos h1 {
+    font-size: 1.5rem;
   }
-  main .sectionQuienesDiferentes .sectionQuienesImg,
-  main .sectionQuienesDiferentes .sectionQuienesTexto {
-    width: 100%;
-    text-align: center;
+  main .sectionQuienesSomos .sectionQuienesSomosp,
+  main .sectionQuienesSomos .sectionQuienesSomosp1 {
+    font-size: 1rem;
+    padding: 0.625rem;
+    margin: 0.0075rem 0;
   }
-  main .sectionQuienesDiferentes .sectionQuienesTexto {
+  main .sectionQuienesSomos .sectionQuienesSomosTexto {
     margin-top: 1rem;
   }
-  main .carousel-caption-below {
-    max-width: 100%;
-    margin: 0.625rem 0rem 0rem 0rem;
-  }
-  main .carousel-item {
-    max-width: 100%;
-  }
-  main .carousel-item img {
+  main .proximosEventos {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 150vh;
+    background-image: url("../../assets/copa de vino blanco2.png");
+    background-size: cover;
+    background-position: center;
   }
-  main .carousel-item p {
+  main .proximosEventos .proximosEventosImg {
+    display: none;
+  }
+  main .proximosEventos p {
     font-size: 1rem;
   }
-  main .proximosEventos {
-    max-width: 90%;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-    padding: 0px;
+  main .proximosEventos h1 {
+    font-size: 1.75rem;
   }
-  main .proximosEventos .proximosEventosImg img {
+  main .sectionTituloDegu {
     width: 100%;
-    max-width: 100%;
+    height: 90vh;
   }
-  main .proximosEventos .proximosEventosTexto {
-    max-width: 100%;
-    padding: 0px 0rem 10px 0px;
+  main .carousel-caption-below p {
+    font-size: 1rem;
   }
-  main .proximosEventos .eventoTextoCaja {
-    margin-top: 0.5rem;
+  main .carousel-caption-below h1 {
+    font-size: 1rem;
   }
   main .contactanosencuesta div .nombre input {
     padding: 1.25rem 3.75rem;
@@ -633,6 +542,22 @@ nav .cerrar-menu {
   main .portada h3 {
     font-size: 1.875rem;
   }
+  main .sectionTituloDegu .carousel-item {
+    position: relative;
+    max-width: 100%;
+  }
+  main .sectionTituloDegu .zoomable-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+  }
+  main .sectionTituloDegu .carousel-item:hover .zoomable-img {
+    transform: scale(1.5);
+    cursor: zoom-out; /* Cambia el cursor al hacer clic */
+    position: relative;
+    z-index: 10;
+  }
   main .proximosEventos h1 {
     font-size: 1.25rem;
   }
@@ -643,7 +568,7 @@ nav .cerrar-menu {
     font-size: 0.875rem;
   }
   main .proximosEventos p {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   main .contactanos .contactanosencuesta div {
     font-size: 1.125rem;
@@ -660,6 +585,4 @@ nav .cerrar-menu {
   main .contactanos .contactanosencuesta div .mensaje textarea {
     padding: 0.25rem 0.125rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

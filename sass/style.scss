@@ -1,20 +1,20 @@
-@import"./utilities/maps";
-@import"./utilities/mixins";
+@use 'utilities/maps' as maps;
+@use "./utilities/mixins";
+
+@use "./base/resert";
+@use "./base/typografias";
+@use "./base/animaciones";
+
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";
+
+@use "./components/navbar";
+@use "./components/stylesheet";
 
 
-@import "./base/resert";
-@import "./base/typografias";
-
-@import "./layout/header";
-@import "./layout/main";
-@import "./layout/footer";
-
-@import "./components/navbar";
-@import "./components/stylesheet";
-
-@import "./layout/media/media1290";
-@import "./layout/media/media860";
-@import "./layout/media/media430";
+@use "./layout/media/media1100";
+@use "./layout/media/media430";
 
 
 

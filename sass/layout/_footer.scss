@@ -1,29 +1,42 @@
+@use 'sass:map';
+@use '../utilities/mixins' as mixins;
+@use '../utilities/maps' as maps;
+
 footer {
-    background-color:map-get($colores, color4);
+    background-color: map.get(maps.$colores, 'color4');
     width: 100%;
-    height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;  
     
     .direcciones {
-        @include flex(row,space-around,center);      
+        @include mixins.flex(row,space-around,center);      
         width: 100%;
-        height: 3.125rem;
         font-size: 1.25rem;
         font-family: "trebuc";
-        text-align: center;
-        justify-self: center;
+        align-items: center;  
         list-style-type: none;
         box-shadow: .3125rem .9375rem 3.125rem;
+        padding: 0rem 0;  
+        }
 }
         a {
-            color: map-get($colores, color2);   
+            color: map.get(maps.$colores, 'color2');   
         }
     .logos{
-        @include flex(row,space-around,center);
-        gap:20px; 
-        
-        
+        @include mixins.flex(row,space-around,center);
+        gap:20px;
     }
-
+    .logos {
+        transition: transform 0.3s ease-in-out;    
+            
+        &:hover{
+            transform: scale(1.2);
+        }
     }
+    .celular{
+        transition: transform 0.3s ease-in-out;    
+                    
+        &:hover{
+            transform: scale(1.2);
+        }
+}

@@ -33,9 +33,9 @@
             <ul>
                 <section class="barraDeTarea">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="../index.html#quienes-somos">Quiénes somos</a></li>
                     <li><a href="./degustaciones.html">Degustaciones</a></li>
-                    <li><a href="./proximos-eventos.html">Proximos Eventos</a></li>
+                    <a href="../pages/degustaciones.html#proximosEventos">Proximos Eventos</a>
                     <li><a href="#">Contactanos</a></li>
                 </section>
             </ul>
@@ -44,7 +44,7 @@
     <main>
         <section class="contactanos">
 
-            <section class="contactanosencuesta">
+            <div class="contactanosencuesta">
                 <form action="">
                     <div>
                         <div class="nombre">
@@ -63,26 +63,29 @@
                             <label for="mensaje">Mensaje</label>
                             <textarea name="mensaje" id="mensaje" cols="33" rows="10"></textarea> 
                         </div> 
+                        <div class="botonEnviar">
+                            <button type="submit" id="btnEnviar">Enviar por WhatsApp</button>
+                        </div>
                     </div>
                 </form>
-                </section> 
+            </div> 
 
-                <section class="contactanosimg">   
+                <div class="contactanosimg">   
                     <img src="../assets/corchos.png" alt="fondo de corchos">
-                </section>
-            </section>     
+                </div>
+        </section>     
     </main>
     <footer>
-        <ul>
-            <section class="direcciones">
-                <li><a href="https://api.whatsapp.com/send?phone=3853007788" target="_blank" rel="noopener noreferrer"> 3853007788</i></a></li>
-                <div class="logos">
-                    <li><a href="https://www.facebook.com/profile.php?id=100083048124433" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="../index.html">OSADIA WINE</a></li>                   
-                    <li><a href="https://www.instagram.com/osadiawine/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
-                </div>
-            </section>
+        <section class="direcciones">
+            <ul class="celular">
+                <li><a href="https://api.whatsapp.com/send?phone=3853007788" target="_blank" rel="noopener noreferrer"> 3853007788</a></li>
+            </ul>
+            <ul class="logos">
+                <li><a href="https://www.facebook.com/profile.php?id=100083048124433" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="./index.html">OSADIA WINE</a></li>                   
+                <li><a href="https://www.instagram.com/osadiawine/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
         </ul>
+    </section>
     </footer>
     </section>
     <a href="https://api.whatsapp.com/send?phone=+5493853007788" class="btn-wsp" target="_blank">

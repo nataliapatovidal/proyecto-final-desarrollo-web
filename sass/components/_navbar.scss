@@ -1,16 +1,24 @@
+@use 'sass:map';
+@use '../utilities/mixins' as mixins;
+@use '../utilities/maps' as maps;
+
 nav{
     
 .barraDeTarea{
-    @include flex(row,space-around,none);
+    @include mixins.flex(row,space-around,none);
     font-size: 1.375rem;
     font-family: "seasons";
     list-style: none;
     gap: 1.75rem;
 }
         a{
-        color: map-get($colores, color3);  
+        display: inline-block; // ← esto habilita transform
+        color: map.get(maps.$colores, 'color3');
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;  
+        
         &:hover{
-        color: map-get($colores, color2);;
+        color: map.get(maps.$colores, 'color2');
+        transform: scale(1.2);
         }
     }   
     .cerrar-menu{

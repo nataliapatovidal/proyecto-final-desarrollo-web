@@ -1,12 +1,26 @@
+@use 'sass:map';
+@use '../utilities/mixins' as mixins;
+@use '../utilities/maps' as maps;
+
 header {
+    @include mixins.flex(row,space-between,center);
+    background-color: map.get(maps.$colores, 'color4'); 
+    padding-top: 0.5rem;
+    padding-bottom: .125rem; 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    text-align: center;
     .logoOsadia{
         max-width: 12.5rem;
+        height: auto;
+        transition: transform 0.3s ease-in-out;    
+            
+        &:hover{
+            transform: scale(1.2);
+        }
     }
-    @include flex(row,space-between,center);
-    background-color: map-get($colores, color4); 
-    padding: 2rem;
-    text-align: center;
-    .abrir-menu{
+
+    .abrir-menu {
         display: none;
     }
 }
